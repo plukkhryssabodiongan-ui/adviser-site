@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Coverage Check | Your Name</title>
+  <meta name="description" content="Take a 2-minute quiz, get a personalized overview, then talk it through on a free call.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <strong>Your Name</strong>
+    <a class="btn small" href="#quiz">Take the quiz</a>
+  </header>
+
+  <section class="hero">
+    <h1>Know what coverage you actually need before you buy anything</h1>
+    <p>Answer 3 quick questions, get a personalized overview, then talk it through on a free call. No pressure.</p>
+    <a class="btn" href="#quiz">Start the free quiz</a>
+    <small>Free · about 2 minutes · no obligation</small>
+  </section>
+
+  <section id="quiz" class="quiz">
+    <div class="quiz-card">
+      <div class="progress"><div id="bar"></div></div>
+
+      <div class="step active" data-step="1">
+        <h2>What is your age range?</h2>
+        <div class="options" data-key="age">
+          <button type="button">18–25</button>
+          <button type="button">26–35</button>
+          <button type="button">36–45</button>
+          <button type="button">46+</button>
+        </div>
+      </div>
+
+      <div class="step" data-step="2">
+        <h2>What matters most to you right now?</h2>
+        <div class="options" data-key="priority">
+          <button type="button">Protecting my family</button>
+          <button type="button">Health and critical illness</button>
+          <button type="button">Savings and future goals</button>
+          <button type="button">Not sure yet</button>
+        </div>
+        <button type="button" class="link back">← Back</button>
+      </div>
+
+      <div class="step" data-step="3">
+        <h2>What monthly budget feels comfortable?</h2>
+        <div class="options" data-key="budget">
+          <button type="button">Below ₱2,000</button>
+          <button type="button">₱2,000 – ₱5,000</button>
+          <button type="button">₱5,000 – ₱10,000</button>
+          <button type="button">Above ₱10,000</button>
+        </div>
+        <button type="button" class="link back">← Back</button>
+      </div>
+
+      <div class="step" data-step="4">
+        <h2>Where should I send your overview?</h2>
+        <form id="lead-form">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Mobile number">
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="check">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to be contacted and to the <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <button type="submit" class="btn">Get my overview</button>
+          <p id="form-status" role="status"></p>
+        </form>
+        <button type="button" class="link back">← Back</button>
+      </div>
+
+      <div class="step" data-step="5">
+        <h2>Thank you!</h2>
+        <p>I'll be in touch shortly. Want to go through your results together?</p>
+        <a id="book-link" class="btn" href="#">Book a free call</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <div class="cards two">
+      <div class="card"><span class="num">1</span><h3>Take the free quiz</h3><p>Tell me a little about your situation. It takes about 2 minutes.</p></div>
+      <div class="card"><span class="num">2</span><h3>Book a free call</h3><p>We go through your options together, with no pressure to buy.</p></div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <h2>What clients say</h2>
+    <div class="cards">
+      <div class="card"><p>"Replace with a real client testimonial."</p><strong>— Client name</strong></div>
+      <div class="card"><p>"Replace with a real client testimonial."</p><strong>— Client name</strong></div>
+      <div class="card"><p>"Replace with a real client testimonial."</p><strong>— Client name</strong></div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-photo">Your photo</div>
+    <div>
+      <h2>Why work with me</h2>
+      <p>Write 2–3 sentences about your story, your experience, and how you work. Say what makes your approach different.</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>00+</strong><span>Clients helped</span></div>
+    <div><strong>0 yrs</strong><span>Experience</span></div>
+    <div><strong>Licensed</strong><span>Insurance advisor</span></div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+    <p class="fine">Add the disclosures your company requires here.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
